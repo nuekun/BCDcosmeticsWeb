@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fullScreenPhoto {
+  width: 100%;
+  margin: 0;
+  height: 300px;
+  background-color: lightblue;
+}
+
+.fullScreenPhoto2 {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  background-color: lightgreen;
+}
+
+.fullScreenPhoto3 {
+  width: 100%;
+  margin: 0;
+  height: 300px;
+  background-color: lightgrey;
+}
+
+video {
+  z-index: -100;
+  background-size: cover;
+  transition: 1s opacity;
+  width: 100vw;
+}
+
+.video-container {
+  height: 480px;
+}
+
+.video-parallax {
+  -webkit-transition-position: fixed;
+  position: fixed;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container {
+    width: 100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-container {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-parallax {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    background: url('../../assets/img/poster.jpg');
+    background-size: cover;
+  }
+}
+
